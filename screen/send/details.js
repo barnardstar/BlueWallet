@@ -539,6 +539,7 @@ export default class SendDetails extends Component {
             opt.fee,
             changeAddress,
             this.state.isTransactionReplaceable ? HDSegwitBech32Wallet.defaultRBFSequence : HDSegwitBech32Wallet.finalRBFSequence,
+            true,
           );
           timers.push(new Date() - startTime)
 
