@@ -1151,7 +1151,7 @@ export default class SendDetails extends Component {
               {this.renderCreateButton()}
               {this.renderFeeSelectionModal()}
               {this.renderAdvancedTransactionOptionsModal()}
-              {this.state.timers && this.state.timers.map((t, i) => <View key={i}><Text>{t}</Text></View>)}
+              {this.state.timers && this.state.timers.map((t, i) => <View key={i}><Text style={{color: 'red'}}>{t}</Text></View>)}
             </KeyboardAvoidingView>
           </View>
           <BlueDismissKeyboardInputAccessory />
