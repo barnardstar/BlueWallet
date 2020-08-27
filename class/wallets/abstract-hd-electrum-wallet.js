@@ -816,6 +816,8 @@ export class AbstractHDElectrumWallet extends AbstractHDWallet {
     }
 
     const { inputs, outputs, fee } = algo(utxos, targets, feeRate);
+    console.info('AbstractHDElectrumWallet')
+    return { fee }
 
     // .inputs and .outputs will be undefined if no solution was found
     if (!inputs || !outputs) {
